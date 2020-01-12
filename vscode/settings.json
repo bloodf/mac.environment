@@ -1,0 +1,63 @@
+{
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 1,
+  "cSpell.language": "en,en_US,pt,pt_BR,fullstack",
+  "codemetrics.basics.CodeLensEnabled": false,
+  "cSpell.allowCompoundWords": true,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.maxTokenizationLineLength": 2000000,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+  "workbench.fontAliasing": "antialiased",
+  "breadcrumbs.enabled": true,
+  "auto-close-tag.SublimeText3Mode": true,
+  "sync.askGistName": true,
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.gist": "880f1e2e79f7545977fbf1e00efb7dd0",
+  "sync.quietSync": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "extensions.ignoreRecommendations": true,
+  "editor.formatOnPaste": true,
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 100,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "window.nativeTabs": true,
+  "search.smartCase": true,
+  "search.showLineNumbers": true,
+  "search.useGlobalIgnoreFiles": true,
+  "search.maintainFileSearchCache": true,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "materialTheme.accent": "Orange",
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  "npm-intellisense.scanDevDependencies": true,
+}
