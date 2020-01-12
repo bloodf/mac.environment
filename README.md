@@ -140,10 +140,13 @@ $ brew install awscli aws-keychain aws-elasticbeanstalk
 
 ## Android
 
-- Install
+- Instal JDK
+
+Visit [Oracle JDK Download](https://www.oracle.com/technetwork/java/javase/downloads/index.html) and download the latest JDK
+
+- Install Gradle
 
 ```bash
-$ brew install homebrew/cask/java
 $ brew install gradle imagemagick
 ```
 
