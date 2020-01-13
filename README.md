@@ -20,6 +20,12 @@ This installation guide is divided with the tools you use to make it easier for 
 ## Apps
 
 ```bash
+# Homebrew
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+```bash
+# Firefox, Firefox Developer, Dropbox, Google Drive, SequelPro, VsCode, Docker, Postman, Insomnia, Keka, 1Password, Filezilla, AppCleaner, Ccleaner, Caffeine, iStatesMenu, Duet, Spotify, Calibre, Handbrake, mpegStreamclip, Skype, Telegram, Slack, Whatsapp, Discord
 $ curl -s 'https://api.macapps.link/pt/firefox-firefoxdev-chrome-dropbox-drive-github-sequelpro-vscode-docker-postman-insomnia-keka-1password-filezilla-appcleaner-ccleaner-caffeine-istatmenus-duet-spotify-calibre-handbrake-mpegstreamclip-skype-telegram-slack-whatsapp-discord' | sh
 $ brew cask install mtmr
 ```
@@ -29,6 +35,7 @@ $ brew cask install mtmr
 - Install
 
 ```bash
+# Git, Git Large File System, Git Flow
 $ brew install git git-lfs gitflow
 ```
 
@@ -41,6 +48,7 @@ $ ln -sv $(pwd)/git/gitconfig.symlink $HOME/.gitconfig
 ## Fonts
 
 ```bash
+# Nerd Fonts
 $ brew tap homebrew/cask-fonts
 $ brew cask install font-hack-nerd-font
 ```
@@ -54,12 +62,14 @@ $ cp -r "$(pwd)/fonts/"* ~/Library/Fonts
 ## Yarn
 
 ```bash
+# Yarn
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
 ## NVM
 
 ```bash
+# NVM
 $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 
@@ -74,6 +84,7 @@ $ ln -sv $(pwd)/ssh/config $HOME/.ssh/config
 - Install
 
 ```bash
+# Oh My ZSH
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
