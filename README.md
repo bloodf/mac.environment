@@ -27,6 +27,10 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 ```bash
 # Firefox, Firefox Developer, Dropbox, Google Drive, SequelPro, VsCode, Docker, Postman, Insomnia, Keka, 1Password, Filezilla, AppCleaner, Ccleaner, Caffeine, iStatesMenu, Duet, Spotify, Calibre, Handbrake, mpegStreamclip, Skype, Telegram, Slack, Whatsapp, Discord
 $ curl -s 'https://api.macapps.link/pt/firefox-firefoxdev-chrome-dropbox-drive-github-sequelpro-vscode-docker-postman-insomnia-keka-1password-filezilla-appcleaner-ccleaner-caffeine-istatmenus-duet-spotify-calibre-handbrake-mpegstreamclip-skype-telegram-slack-whatsapp-discord' | sh
+```
+
+### MacBook Pro TouchBar
+```bash
 $ brew cask install mtmr
 ```
 
@@ -42,7 +46,7 @@ $ brew install git git-lfs gitflow
 - Set the configuration file
 
 ```bash
-$ ln -sv $(pwd)/git/gitconfig.symlink $HOME/.gitconfig
+$ cp -r $(pwd)/git/gitconfig.symlink $HOME/.gitconfig
 ```
 
 ## Fonts
@@ -76,7 +80,7 @@ $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ## SSH
 
 ```bash
-$ ln -sv $(pwd)/ssh/config $HOME/.ssh/config
+$ cp -r $(pwd)/ssh/config $HOME/.ssh/config
 ```
 
 ## ZSH
@@ -91,7 +95,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 - Set the configuration file
 
 ```bash
-$ ln -sv $(pwd)/zsh/zshrc.symlink $HOME/.zshrc
+$ cp -r $(pwd)/zsh/zshrc.symlink $HOME/.zshrc
 ```
 
 ### Plugins
@@ -118,7 +122,7 @@ $ git clone https://github.com/mafredri/zsh-async ~/.oh-my-zsh/plugins/async
 
 ```bash
 $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-$ ln -sv $(pwd)/zsh/p10k.symlink $HOME/.p10k.zsh
+$ cp -r $(pwd)/zsh/p10k.symlink $HOME/.p10k.zsh
 ```
 
 ## Terminal
@@ -126,11 +130,10 @@ $ ln -sv $(pwd)/zsh/p10k.symlink $HOME/.p10k.zsh
 - Set the configuration file
 
 ```bash
-$ ln -sv $(pwd)/bash/bash_alias.symlink $HOME/.bash_alias
-$ ln -sv $(pwd)/bash/bash_profile.symlink $HOME/.bash_profile
-$ ln -sv $(pwd)/bash/bashrc.symlink $HOME/.bashrc
-$ ln -sv $(pwd)/bash/bashrc.symlink $HOME/.bashrc
-$ ln -sv $(pwd)/bash/profile.symlink $HOME/.profile
+$ cp -r $(pwd)/bash/bash_alias.symlink $HOME/.bash_alias
+$ cp -r $(pwd)/bash/bash_profile.symlink $HOME/.bash_profile
+$ cp -r $(pwd)/bash/bashrc.symlink $HOME/.bashrc
+$ cp -r $(pwd)/bash/profile.symlink $HOME/.profile
 ```
 
 ### Theme
@@ -167,7 +170,7 @@ $ brew install gradle imagemagick
 
 ```bash
 $ brew tap MiderWong/flutter
-$ brew cask install flutter
+$ brew install flutter
 $ brew cask install cocoapods
 ```
 
