@@ -9,8 +9,8 @@ This installation guide is divided with the tools you use to make it easier for 
 - [Apps](#apps)
 - [Git](#git)
 - [Fonts](#fonts)
-- [Yarn](#yarn)
 - [NVM](#nvm)
+- [Yarn](#yarn)
 - [SSH](#ssh)
 - [ZSH](#zsh)
 - [Terminal](#terminal)
@@ -18,6 +18,25 @@ This installation guide is divided with the tools you use to make it easier for 
 - [Android](#android)
 
 ## Apps
+
+- Install xCode from App Store
+- Disable Gatekeeper
+
+```bash
+$ sudo spctl --master-disable
+```
+
+- Install xCode Terminal Tools
+
+```bash
+$ xcode-select --install
+```
+
+- Accept xCode License
+
+```bash
+$ sudo xcodebuild -license accept
+```
 
 ```bash
 # Homebrew
@@ -29,7 +48,8 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ curl -s 'https://api.macapps.link/pt/firefox-firefoxdev-chrome-dropbox-drive-github-sequelpro-vscode-docker-postman-insomnia-keka-1password-filezilla-appcleaner-ccleaner-caffeine-istatmenus-duet-spotify-calibre-handbrake-mpegstreamclip-skype-telegram-slack-whatsapp-discord' | sh
 ```
 
-### MacBook Pro TouchBar
+- MacBook Pro TouchBar Only
+
 ```bash
 $ brew cask install mtmr
 ```
@@ -40,13 +60,13 @@ $ brew cask install mtmr
 
 ```bash
 # Git, Git Large File System, Git Flow
-$ brew install git git-lfs gitflow
+$ brew install git-lfs gitflow
 ```
 
 - Set the configuration file
 
 ```bash
-$ cp -r $(pwd)/git/gitconfig.symlink $HOME/.gitconfig
+$ cp -r $(pwd)/git/gitconfig $HOME/.gitconfig
 ```
 
 ## Fonts
@@ -95,7 +115,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 - Set the configuration file
 
 ```bash
-$ cp -r $(pwd)/zsh/zshrc.symlink $HOME/.zshrc
+$ cp -r $(pwd)/zsh/zshrc $HOME/.zshrc
 ```
 
 ### Plugins
@@ -122,7 +142,7 @@ $ git clone https://github.com/mafredri/zsh-async ~/.oh-my-zsh/plugins/async
 
 ```bash
 $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-$ cp -r $(pwd)/zsh/p10k.symlink $HOME/.p10k.zsh
+$ cp -r $(pwd)/zsh/p10k $HOME/.p10k.zsh
 ```
 
 ## Terminal
@@ -130,10 +150,10 @@ $ cp -r $(pwd)/zsh/p10k.symlink $HOME/.p10k.zsh
 - Set the configuration file
 
 ```bash
-$ cp -r $(pwd)/bash/bash_alias.symlink $HOME/.bash_alias
-$ cp -r $(pwd)/bash/bash_profile.symlink $HOME/.bash_profile
-$ cp -r $(pwd)/bash/bashrc.symlink $HOME/.bashrc
-$ cp -r $(pwd)/bash/profile.symlink $HOME/.profile
+$ cp -r $(pwd)/bash/bash_alias $HOME/.bash_alias
+$ cp -r $(pwd)/bash/bash_profile $HOME/.bash_profile
+$ cp -r $(pwd)/bash/bashrc $HOME/.bashrc
+$ cp -r $(pwd)/bash/profile $HOME/.profile
 ```
 
 ### Theme
