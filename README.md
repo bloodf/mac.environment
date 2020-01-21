@@ -16,6 +16,7 @@ This installation guide is divided with the tools you use to make it easier for 
 - [Terminal](#terminal)
 - [AWS](#aws)
 - [Android](#android)
+- [MacOS](#macos)
 
 ## Apps
 
@@ -198,4 +199,17 @@ $ brew cask install cocoapods
 
 ```bash
 $ flutter doctor
+```
+
+## MacOs
+
+- Show Hidden Files
+```bash
+$ defaults write com.apple.finder AppleShowAllFiles YES
+```
+
+- Clear .DS_Store files
+
+```bash
+$ sudo find / -name .DS_Store -delete; killall Finder
 ```
