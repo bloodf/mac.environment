@@ -49,10 +49,17 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 $ curl -s 'https://api.macapps.link/pt/firefox-firefoxdev-chrome-dropbox-drive-github-sequelpro-vscode-docker-postman-insomnia-keka-1password-filezilla-appcleaner-ccleaner-caffeine-istatmenus-duet-spotify-calibre-handbrake-mpegstreamclip-skype-telegram-slack-whatsapp-discord' | sh
 ```
 
-- MacBook Pro TouchBar Only
+- [MTMR](https://github.com/Toxblh/MTMR)
+MacBook Pro TouchBar Only
 
 ```bash
 $ brew cask install mtmr
+```
+
+- [Lazy Docker](https://github.com/jesseduffield/lazydocker#installation)
+
+```bash
+$ brew install jesseduffield/lazydocker/lazydocker
 ```
 
 ## Git
