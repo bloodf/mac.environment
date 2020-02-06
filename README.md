@@ -69,6 +69,8 @@ MacBook Pro TouchBar Only
 $ brew cask install mtmr
 ```
 
+Após instalado, para instalar a configuração, copie o conteúdo do arquivo (/mtmr/profile.json), clique no ícone do MTMR que irá aparecer na barra do topo do Mac, clique em `Preferences`, cole o conteúdo, salve, e reinicie o aplicativo.
+
 - [Lazy Docker](https://github.com/jesseduffield/lazydocker#installation)
 
 ```bash
