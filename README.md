@@ -6,6 +6,7 @@ This are the configurations I need to setup a new MacOS development environment 
 
 This installation guide is divided with the tools you use to make it easier for others to customize them, the list of tools you use is as follows:
 
+- [MacOS](#macos)
 - [Apps](#apps)
 - [Git](#git)
 - [Fonts](#fonts)
@@ -16,7 +17,19 @@ This installation guide is divided with the tools you use to make it easier for 
 - [Terminal](#terminal)
 - [AWS](#aws)
 - [Android](#android)
-- [MacOS](#macos)
+
+## MacOs
+
+- Show Hidden Files
+```bash
+$ defaults write com.apple.finder AppleShowAllFiles YES
+```
+
+- Clear .DS_Store files
+
+```bash
+$ sudo find / -name .DS_Store -delete; killall Finder
+```
 
 ## Apps
 
@@ -77,6 +90,8 @@ $ brew install git-lfs gitflow
 $ cp -r $(pwd)/git/gitconfig $HOME/.gitconfig
 ```
 
+Após executar este comando, entre no arquivo e configure ele de acordo com os seus dados de usuário do GitHub
+
 ## Fonts
 
 ```bash
@@ -126,6 +141,8 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 $ cp -r $(pwd)/zsh/zshrc $HOME/.zshrc
 ```
 
+Apos executar este comando, abra o arquivo e altere os dados de acordo com os dados de usuário do seu Mac
+
 ### Plugins
 
 - zsh-autosuggestions
@@ -163,6 +180,8 @@ $ cp -r $(pwd)/bash/bash_profile $HOME/.bash_profile
 $ cp -r $(pwd)/bash/bashrc $HOME/.bashrc
 $ cp -r $(pwd)/bash/profile $HOME/.profile
 ```
+
+Atenção, pois dentro do arquivo `.bash_profile` há apontamentos para os arquivos do SDK do ANDROID e do Gradle, caso seja feito a instalação de uma versão mais nova, você deve fazer a alteração do apontamento para a versão correta.
 
 ### Theme
 
@@ -206,17 +225,4 @@ $ brew cask install cocoapods
 
 ```bash
 $ flutter doctor
-```
-
-## MacOs
-
-- Show Hidden Files
-```bash
-$ defaults write com.apple.finder AppleShowAllFiles YES
-```
-
-- Clear .DS_Store files
-
-```bash
-$ sudo find / -name .DS_Store -delete; killall Finder
 ```
