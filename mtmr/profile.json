@@ -163,7 +163,7 @@
   {
     "type": "dock",
     "align": "left",
-    "width": 400,
+    "width": 400
   },
   {
     "type": "appleScriptTitledButton",
@@ -203,10 +203,9 @@
     "bordered": false,
     "width": 24,
     "items": [{
-        "type": "close",
-        "bordered": false,
-        "align": "left",
-        "width": 60
+        "type": "escape",
+        "title": "Esc",
+        "align": "left"
       },
       {
         "type": "battery",
@@ -243,7 +242,7 @@
       },
       {
         "type": "inputsource",
-        "align": "right",
+        "align": "right"
       },
       {
         "type": "illuminationDown",
@@ -279,6 +278,12 @@
         "type": "volumeUp",
         "bordered": true,
         "align": "right"
+      },
+      {
+        "type": "close",
+        "bordered": false,
+        "align": "right",
+        "width": 60
       }
     ]
   },
@@ -287,6 +292,6 @@
     "align": "right",
     "bordered": false,
     "title": "❌",
-    "width": 24,
-  },
+    "width": 24
+  }
 ]
