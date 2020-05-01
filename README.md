@@ -166,6 +166,12 @@ $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zs
 $ git clone https://github.com/mafredri/zsh-async ~/.oh-my-zsh/plugins/async
 ```
 
+- zsh-async
+
+```bash
+$ git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+```
+
 - powerlevel10k
 
 ```bash
