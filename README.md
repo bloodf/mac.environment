@@ -83,7 +83,7 @@ $ brew install jesseduffield/lazydocker/lazydocker
 
 ```bash
 # Git, Git Large File System, Git Flow
-$ brew install git-lfs gitflow
+$ brew install git-lfs git-flow
 ```
 
 - Set the configuration file
@@ -108,6 +108,13 @@ $ brew cask install font-hack-nerd-font
 $ cp -r "$(pwd)/fonts/"* ~/Library/Fonts
 ```
 
+## NVM
+
+```bash
+# NVM
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+```
+
 ## Yarn
 
 ```bash
@@ -115,12 +122,6 @@ $ cp -r "$(pwd)/fonts/"* ~/Library/Fonts
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
-## NVM
-
-```bash
-# NVM
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-```
 
 ## SSH
 
