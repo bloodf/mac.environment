@@ -3,13 +3,13 @@ COMMANDS="Node -> nodeglobalinstall\nPackage Managers Update -> updaterepo\nApp 
 alias helpAlias="printf \"$COMMANDS\""
 
 #NODE
-NPM_PACKS="@quasar/cli @vue/cli @vue/cli-service-global @vue/devtools capacitor cordova electron eslint global ios-deploy ios-sim jscs jshint jslint ndb netlify-cli nodemon now npm npm-check-updates prettier start-android-emulator ts-node tslint typescript vue-language-server"
+NPM_PACKS=" @architect/architect @aws-amplify/cli @nestjs/cli @quasar/cli @vue/cli-service-global @vue/cli @vue/devtools capacitor caprover codesandbox commitizen cordova degit ejs-lint electron eslint global ios-deploy ios-sim jscs jshint jslint lerna-wizard lerna ndb nodemon npm-check-updates npm prettier serverless start-android-emulator tsdx typescript vite vue-language-server"
 alias updaterepo="npm update -g && brew update && brew upgrade"
 alias nodeglobalinstall="npm install -g $NPM_PACKS"
 alias listNodeModules="find . -name 'node_modules' -type d -prune"
 alias pruneNodeModules="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
 
-alias ninite="curl -s 'https://api.macapps.link/pt/firefox-firefoxdev-chrome-dropbox-drive-github-sequelpro-vscode-docker-postman-insomnia-keka-1password-filezilla-appcleaner-ccleaner-caffeine-istatmenus-duet-spotify-calibre-handbrake-mpegstreamclip-skype-telegram-slack-whatsapp-discord' | sh"
+alias ninite="curl -s 'https://api.macapps.link/en/firefox-firefoxdev-chrome-dropbox-drive-hyperswitch-github-sequelpro-vscode-docker-insomnia-keka-1password-filezilla-appcleaner-caffeine-istatmenus-duet-spotify-vlc-calibre-handbrake-skype-telegram-slack-whatsapp-discord' | sh"
 
 #Mac
 alias recsim="xcrun simctl io booted recordVideo — type=mp4"
