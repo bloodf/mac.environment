@@ -21,6 +21,7 @@ This installation guide is divided with the tools you use to make it easier for 
 ## MacOs
 
 - Show Hidden Files
+
 ```bash
 $ defaults write com.apple.finder AppleShowAllFiles YES
 ```
@@ -63,10 +64,10 @@ $ curl -s 'https://api.macapps.link/pt/firefox-firefoxdev-chrome-dropbox-drive-g
 ```
 
 - [MTMR](https://github.com/Toxblh/MTMR)
-MacBook Pro TouchBar Only
+  MacBook Pro TouchBar Only
 
 ```bash
-$ brew cask install mtmr
+$ brew install mtmr
 ```
 
 Após instalado, para instalar a configuração, copie o conteúdo do arquivo (/mtmr/profile.json), clique no ícone do MTMR que irá aparecer na barra do topo do Mac, clique em `Preferences`, cole o conteúdo, salve, e reinicie o aplicativo.
@@ -89,7 +90,7 @@ $ brew install git-lfs git-flow
 - Set the configuration file
 
 ```bash
-$ cp -r $(pwd)/git/gitconfig $HOME/.gitconfig
+$ ln -s $(pwd)/git/gitconfig ~/.gitconfig
 ```
 
 Após executar este comando, entre no arquivo e configure ele de acordo com os seus dados de usuário do GitHub
@@ -99,7 +100,7 @@ Após executar este comando, entre no arquivo e configure ele de acordo com os s
 ```bash
 # Nerd Fonts
 $ brew tap homebrew/cask-fonts
-$ brew cask install font-hack-nerd-font
+$ brew install font-hack-nerd-font
 ```
 
 - Copy Fonts
@@ -122,11 +123,10 @@ $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
-
 ## SSH
 
 ```bash
-$ cp -r $(pwd)/ssh/config $HOME/.ssh/config
+$ ln -s $(pwd)/ssh/config ~/.ssh/config
 ```
 
 ## ZSH
@@ -141,7 +141,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 - Set the configuration file
 
 ```bash
-$ cp -r $(pwd)/zsh/zshrc $HOME/.zshrc
+$ ln -s $(pwd)/zsh/zshrc ~/.zshrc
 ```
 
 Apos executar este comando, abra o arquivo e altere os dados de acordo com os dados de usuário do seu Mac
@@ -166,7 +166,7 @@ $ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zs
 $ git clone https://github.com/mafredri/zsh-async ~/.oh-my-zsh/plugins/async
 ```
 
-- zsh-async
+- zsh-nvm
 
 ```bash
 $ git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
@@ -176,7 +176,7 @@ $ git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zs
 
 ```bash
 $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-$ cp -r $(pwd)/zsh/p10k $HOME/.p10k.zsh
+$ ln -s $(pwd)/zsh/p10k ~/.p10k.zsh
 ```
 
 ## Terminal
@@ -184,10 +184,10 @@ $ cp -r $(pwd)/zsh/p10k $HOME/.p10k.zsh
 - Set the configuration file
 
 ```bash
-$ cp -r $(pwd)/bash/bash_alias $HOME/.bash_alias
-$ cp -r $(pwd)/bash/bash_profile $HOME/.bash_profile
-$ cp -r $(pwd)/bash/bashrc $HOME/.bashrc
-$ cp -r $(pwd)/bash/profile $HOME/.profile
+$ ln -s $(pwd)/bash/bash_alias ~/.bash_alias
+$ ln -s $(pwd)/bash/bash_profile ~/.bash_profile
+$ ln -s $(pwd)/bash/bashrc ~/.bashrc
+$ ln -s $(pwd)/bash/profile ~/.profile
 ```
 
 Atenção, pois dentro do arquivo `.bash_profile` há apontamentos para os arquivos do SDK do ANDROID e do Gradle, caso seja feito a instalação de uma versão mais nova, você deve fazer a alteração do apontamento para a versão correta.
@@ -225,9 +225,8 @@ $ brew install gradle imagemagick
 - Install
 
 ```bash
-$ brew tap MiderWong/flutter
 $ brew install flutter
-$ brew cask install cocoapods
+$ brew install cocoapods
 ```
 
 - Check for errors with Flutter doctor
