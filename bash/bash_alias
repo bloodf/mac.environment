@@ -18,4 +18,7 @@ alias bluetoothRestart="sudo kextunload -b com.apple.iokit.BroadcomBluetoothHost
 
 #Docker
 # alias dockerprune="docker rm -f $(docker ps -a -q) && docker rmi -f $(docker images -q) && docker system prune -a"
-alias lzd='lazydocker'
+alias lzd="lazydocker"
+
+alias mkldebug="launchctl setenv MKL_DEBUG_CPU_TYPE 5"
+alias krisp="launchctl setenv MKL_DEBUG_CPU_TYPE 5 & open -n /Applications/krisp.app"
