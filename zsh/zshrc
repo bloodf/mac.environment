@@ -69,7 +69,29 @@ POWERLEVEL9K_MODE="awesome-patched"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm yarn vscode brew zsh-navigation-tools docker docker-compose docker-machine aws zsh-nvm)
+plugins=(
+    git
+    git-auto-fetch
+    git-extras
+    git-flow-avh
+    github
+    gitignore
+    npm
+    yarn
+    vscode
+    brew
+    history
+    history-substring-search
+    node
+    zsh-navigation-tools
+    osx
+    nvm
+    zsh-autosuggestions
+    deno
+    tig
+    emoji
+    emoji-clock
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,3 +133,5 @@ if [ -f ~/.bash_alias ]; then
     . ~/.bash_alias;
 fi
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+source /Users/heitor/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
