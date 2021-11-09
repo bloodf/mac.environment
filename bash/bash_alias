@@ -9,7 +9,7 @@ alias nodeglobalinstall="npm install -g $NPM_PACKS"
 alias listNodeModules="find . -name 'node_modules' -type d -prune"
 alias pruneNodeModules="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
 
-alias ninite="curl -s 'https://api.macapps.link/en/firefox-firefoxdev-chrome-dropbox-drive-hyperswitch-github-sequelpro-vscode-docker-insomnia-keka-1password-filezilla-appcleaner-caffeine-istatmenus-duet-spotify-vlc-calibre-handbrake-skype-telegram-slack-whatsapp-discord' | sh"
+alias ninite="curl -s 'curl -s 'https://api.macapps.link/en/firefox-firefoxdev-chrome-dropbox-drive-hyperswitch-github-sequelpro-vscode-insomnia-keka-filezilla-appcleaner-istatmenus-spotify-vlc-calibre-handbrake-skype-telegram-slack-whatsapp-discord' | sh"
 
 #Mac
 alias recsim="xcrun simctl io booted recordVideo — type=mp4"
@@ -20,5 +20,6 @@ alias bluetoothRestart="sudo kextunload -b com.apple.iokit.BroadcomBluetoothHost
 # alias dockerprune="docker rm -f $(docker ps -a -q) && docker rmi -f $(docker images -q) && docker system prune -a"
 alias lzd="lazydocker"
 
+# AMD Hackintosh
 alias mkldebug="launchctl setenv MKL_DEBUG_CPU_TYPE 5"
 alias krisp="launchctl setenv MKL_DEBUG_CPU_TYPE 5 & open -n /Applications/krisp.app"
