@@ -1,0 +1,16 @@
+#ANDROID
+# Create a JAVA_HOME variable, determined dynamically
+export JAVA_HOME=$(/usr/libexec/java_home)
+# Add that to the global PATH variable
+export PATH=${JAVA_HOME}/bin:$PATH
+
+# Set Android_HOME
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+# Add the Android SDK to the ANDROID_HOME variable
+export PATH=${ANDROID_SDK_ROOT}/platform-tools:$PATH
+export PATH=${ANDROID_SDK_ROOT}/build-tools/30.0.3:$PATH
+export PATH=${ANDROID_SDK_ROOT}/tools:$PATH
+
+#Set GRADLE_HOME
+export GRADLE_HOME=/opt/homebrew/Cellar/gradle/7.3.3
+export PATH=${GRADLE_HOME}/bin:$PATH

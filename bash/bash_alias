@@ -1,5 +1,5 @@
 #Help
-COMMANDS="Node -> nodeglobalinstall\nPackage Managers Update -> updaterepo\nApp Install -> ninite\niOS Sim Rec Video -> recsim nomeVideo.mp4\nFlush DNS -> flushdns\nClearbluetooth -> bluetoothRestart"
+COMMANDS="Node -> nodeglobalinstall\nPackage Managers Update -> updaterepo\niOS Sim Rec Video -> recsim nomeVideo.mp4\nFlush DNS -> flushdns\nClearbluetooth -> bluetoothRestart"
 alias helpAlias="printf \"$COMMANDS\""
 
 #NODE
@@ -8,8 +8,6 @@ alias updaterepo="npm update -g && brew update && brew upgrade"
 alias nodeglobalinstall="npm install -g $NPM_PACKS"
 alias listNodeModules="find . -name 'node_modules' -type d -prune"
 alias pruneNodeModules="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
-
-alias ninite="curl -s 'curl -s 'https://api.macapps.link/en/firefox-firefoxdev-chrome-dropbox-drive-hyperswitch-github-sequelpro-vscode-insomnia-keka-filezilla-appcleaner-istatmenus-spotify-vlc-calibre-handbrake-skype-telegram-slack-whatsapp-discord' | sh"
 
 #Mac
 alias recsim="xcrun simctl io booted recordVideo — type=mp4"

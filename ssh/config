@@ -2,3 +2,9 @@ Host *
   AddKeysToAgent yes
   UseKeychain yes
   IdentityFile ~/.ssh/id_rsa
+
+# BEGIN: Platform.sh certificate configuration
+Host *.platform.sh
+  Include ~/.platformsh/ssh/*.config
+Host *
+# END: Platform.sh certificate configuration
