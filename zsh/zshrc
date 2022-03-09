@@ -128,5 +128,7 @@ if [ -f ~/.bash_profile ]; then
     . ~/.bash_profile;
 fi
 
-source /Users/heitor/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ -f ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+    source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
