@@ -1,3 +1,4 @@
+
 #ANDROID
 # Create a JAVA_HOME variable, determined dynamically
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -14,3 +15,4 @@ export PATH=${ANDROID_SDK_ROOT}/tools:$PATH
 #Set GRADLE_HOME
 export GRADLE_HOME=/opt/homebrew/Cellar/gradle/7.3.3
 export PATH=${GRADLE_HOME}/bin:$PATH
+

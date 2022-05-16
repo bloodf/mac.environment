@@ -11,6 +11,8 @@
 [core]
 	excludesfile = ~/.gitignore_global
   autocrlf = input
+	trustctime = false
+	editor = code --wait
 
 [alias]
   clippy = !sh -c 'git $1 | cowsay -n -f ~/.config/cows/clippit.cow' -
@@ -39,3 +41,18 @@
 
 [commit]
 	gpgsign = true
+[credential]
+	helper = osxkeychain
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[init]
+	defaultBranch = main
+[oh-my-zsh]
+	hide-dirty = 1
+	hide-status = 1

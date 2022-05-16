@@ -1,6 +1,33 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/bash_profile.pre.bash"
+# sbin path
 export PATH="/usr/local/sbin:$PATH"
 
-source ~/.profile
+# Homebrew path
+export PATH="/opt/homebrew/bin:$PATH"
+
+#Pip
+export PATH="/opt/homebrew/lib/python3.9/site-packages/pip:$PATH"
+
+#Ruby Gem
+export GEM_HOME="$HOME/.gem"
+
+# curl path
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+# Ruby path
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="$(gem environment gemdir)/bin:$PATH"
+
+# Support 256 colors path
+export TERM="xterm-256color"
+
+export VOLTA_HOME="$HOME/.volta"
+
+export PATH="$VOLTA_HOME/bin:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 
 # Android Configurations
 if [ -f ~/.android ]; then
@@ -21,3 +48,6 @@ fi
 if [ -f ~/.bash_alias ]; then 
     . ~/.bash_alias;
 fi
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/bash_profile.post.bash"

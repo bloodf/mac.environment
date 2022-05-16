@@ -1,0 +1,10 @@
+dependencies:
+  - vue
+  - react
+
+dev_dependencies:
+  - vue-loader
+  - parcel-bundler
+
+exclude:
+  - react

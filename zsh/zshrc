@@ -1,8 +1,15 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile;
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/$USER/.oh-my-zsh"
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -91,6 +98,12 @@ plugins=(
     tig
     emoji
     emoji-clock
+    asdf
+    colored-man-pages
+    extract
+    fast-syntax-highlighting
+    zsh-completions
+    yarn-autocompletions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,12 +136,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-if [ -f ~/.bash_profile ]; then
-    . ~/.bash_profile;
-fi
-
 if [ -f ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
 
+
+
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"

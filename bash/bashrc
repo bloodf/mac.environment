@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/bashrc.pre.bash"
 # FZF
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -53,3 +55,17 @@ cdnvm(){
   fi
 }
 alias cd='cdnvm'
+
+# Homebrew Command Not Found
+HB_CNF_HANDLER="/opt/homebrew/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+if [ -f "$HB_CNF_HANDLER" ]; then
+  source "$HB_CNF_HANDLER";
+fi
+
+# Homebrew Shell Completion
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/bashrc.post.bash"

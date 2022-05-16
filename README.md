@@ -396,6 +396,11 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 ln -s $(pwd)/zsh/p10k ~/.p10k.zsh
 ```
 
+- yarn-auto-complete
+```bash
+git clone https://github.com/g-plane/zsh-yarn-autocompletions ~/.oh-my-zsh/custom/plugins/zsh-yarn-autocompletions
+```
+
 ## Terminal
 
 To add some new configurations and special tools to the terminal, you can execute the following command to import those.
@@ -406,10 +411,10 @@ To add some new configurations and special tools to the terminal, you can execut
 ln -s $(pwd)/bash/bash_alias ~/.bash_alias
 ln -s $(pwd)/bash/bash_profile ~/.bash_profile
 ln -s $(pwd)/bash/bashrc ~/.bashrc
-ln -s $(pwd)/bash/profile ~/.profile
-ln -s $(pwd)/bash/profile ~/.android
-ln -s $(pwd)/bash/profile ~/.flutter
-ln -s $(pwd)/bash/profile ~/.nvm-load
+ln -s $(pwd)/bash/android ~/.android
+ln -s $(pwd)/bash/flutter ~/.flutter
+ln -s $(pwd)/bash/nvm-load ~/.nvm-load
+ln -s $(pwd)/bash/yarn-autocompletions.yml ~/.yarn-autocompletions.yml
 ```
 
 >Attention, because inside the files `.android, .flutter, .nvm-load` there are specific configurations, with version based, please edit the file with the appropriate version before loading those.

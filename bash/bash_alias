@@ -1,11 +1,10 @@
+
 #Help
-COMMANDS="Node -> nodeglobalinstall\nPackage Managers Update -> updaterepo\niOS Sim Rec Video -> recsim nomeVideo.mp4\nFlush DNS -> flushdns\nClearbluetooth -> bluetoothRestart"
+COMMANDS="Package Managers Update -> updaterepo\niOS Sim Rec Video -> recsim nomeVideo.mp4\nFlush DNS -> flushdns\nClearbluetooth -> bluetoothRestart"
 alias helpAlias="printf \"$COMMANDS\""
 
 #NODE
-NPM_PACKS=" @architect/architect @aws-amplify/cli @nestjs/cli @quasar/cli @vue/cli-service-global @vue/cli @vue/devtools capacitor caprover codesandbox commitizen cordova degit ejs-lint electron eslint global ios-deploy ios-sim jscs jshint jslint lerna-wizard lerna ndb nodemon npm-check-updates npm prettier serverless start-android-emulator tsdx typescript vite vue-language-server"
 alias updaterepo="npm update -g && brew update && brew upgrade"
-alias nodeglobalinstall="npm install -g $NPM_PACKS"
 alias listNodeModules="find . -name 'node_modules' -type d -prune"
 alias pruneNodeModules="find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
 
@@ -21,3 +20,37 @@ alias lzd="lazydocker"
 # AMD Hackintosh
 alias mkldebug="launchctl setenv MKL_DEBUG_CPU_TYPE 5"
 alias krisp="launchctl setenv MKL_DEBUG_CPU_TYPE 5 & open -n /Applications/krisp.app"
+
+# Cleanup Homebrew and Cask cache
+alias cleanup="brew cleanup"
+
+# Copy SSH
+alias copyssh="pbcopy < ~/.ssh/id_ed25519.pub | echo '=> Public key copied to pasteboard.'"
+
+# Open .gitconfig in VSCode
+alias gitcfg="code ~/.gitconfig"
+
+# Update macOS using Command Line Software Update Tool
+alias macupdate="sudo softwareupdate -ia"
+
+# Update Homebrew and Cask formulaes
+# Include -f to update apps that are marked as latest
+alias update="brew update && brew upgrade && brew cu --all"
+
+# List outdated npm packages installed globally
+alias npmcheck="npm outdated -g --depth=0"
+
+# List npm packages installed globally
+alias npmlist="npm list -g --depth=0"
+
+# Update npm packages installed globally
+alias npmupdate="npm update -g"
+
+# Undo the last commit
+alias uncommit="git reset HEAD~1"
+
+# Open .zshrc in VSCode
+alias zshcfg="code ~/.zshrc"
+
+# Fig post block. Keep at the bottom of this file.
+eval "$(fig init zsh post)"
