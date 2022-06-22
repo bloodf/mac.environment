@@ -1,5 +1,5 @@
 # Fig pre block. Keep at the top of this file.
-. "$HOME/.fig/shell/bash_profile.pre.bash"
+[[ -f "$HOME/.fig/shell/bash_profile.pre.bash" ]] && . "$HOME/.fig/shell/bash_profile.pre.bash"
 # sbin path
 export PATH="/usr/local/sbin:$PATH"
 
@@ -21,10 +21,6 @@ export PATH="$(gem environment gemdir)/bin:$PATH"
 
 # Support 256 colors path
 export TERM="xterm-256color"
-
-export VOLTA_HOME="$HOME/.volta"
-
-export PATH="$VOLTA_HOME/bin:$PATH"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -50,4 +46,4 @@ if [ -f ~/.bash_alias ]; then
 fi
 
 # Fig post block. Keep at the bottom of this file.
-. "$HOME/.fig/shell/bash_profile.post.bash"
+[[ -f "$HOME/.fig/shell/bash_profile.post.bash" ]] && . "$HOME/.fig/shell/bash_profile.post.bash"

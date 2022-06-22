@@ -52,5 +52,8 @@ alias uncommit="git reset HEAD~1"
 # Open .zshrc in VSCode
 alias zshcfg="code ~/.zshrc"
 
+# Clear packages
+alias clearNode="npx rimraf -rf **/(dist|.nuxt|node_modules|*-lock.yaml|*.lock)"
+
 # Fig post block. Keep at the bottom of this file.
 eval "$(fig init zsh post)"
