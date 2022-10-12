@@ -1,13 +1,14 @@
 # Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/bash_profile.pre.bash" ]] && . "$HOME/.fig/shell/bash_profile.pre.bash"
+[[ -f "$HOME/.fig/shell/bash_profile.pre.bash" ]] && builtin source "$HOME/.fig/shell/bash_profile.pre.bash"
 # sbin path
 export PATH="/usr/local/sbin:$PATH"
 
 # Homebrew path
 export PATH="/opt/homebrew/bin:$PATH"
 
-#Pip
-export PATH="/opt/homebrew/lib/python3.9/site-packages/pip:$PATH"
+#Python
+export PATH="/opt/homebrew/lib/python3.10/site-packages/pip:$PATH"
+export PATH="/Users/$USER/Library/Python/3.10/bin:$PATH"
 
 #Ruby Gem
 export GEM_HOME="$HOME/.gem"
@@ -42,8 +43,18 @@ fi
 
 #ALIAS
 if [ -f ~/.bash_alias ]; then 
-    . ~/.bash_alias;
+    source ~/.bash_alias;
+fi
+
+#BASHRC
+if [ -f ~/.bashrc ]; then 
+    source ~/.bashrc;
+fi
+
+#BREW
+if [ -f ~/.brew ]; then 
+    source ~/.brew;
 fi
 
 # Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/bash_profile.post.bash" ]] && . "$HOME/.fig/shell/bash_profile.post.bash"
+[[ -f "$HOME/.fig/shell/bash_profile.post.bash" ]] && builtin source "$HOME/.fig/shell/bash_profile.post.bash"

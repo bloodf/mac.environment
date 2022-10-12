@@ -18,14 +18,14 @@ alias bluetoothRestart="sudo kextunload -b com.apple.iokit.BroadcomBluetoothHost
 alias lzd="lazydocker"
 
 # AMD Hackintosh
-alias mkldebug="launchctl setenv MKL_DEBUG_CPU_TYPE 5"
-alias krisp="launchctl setenv MKL_DEBUG_CPU_TYPE 5 & open -n /Applications/krisp.app"
+#alias mkldebug="launchctl setenv MKL_DEBUG_CPU_TYPE 5"
+#alias krisp="launchctl setenv MKL_DEBUG_CPU_TYPE 5 & open -n /Applications/krisp.app"
 
 # Cleanup Homebrew and Cask cache
 alias cleanup="brew cleanup"
 
 # Copy SSH
-alias copyssh="pbcopy < ~/.ssh/id_ed25519.pub | echo '=> Public key copied to pasteboard.'"
+alias copyssh="pbcopy < $1 | echo '=> Public key copied to pasteboard.'"
 
 # Open .gitconfig in VSCode
 alias gitcfg="code ~/.gitconfig"
@@ -53,7 +53,10 @@ alias uncommit="git reset HEAD~1"
 alias zshcfg="code ~/.zshrc"
 
 # Clear packages
-alias clearNode="npx rimraf -rf **/(dist|.nuxt|node_modules|*-lock.yaml|*.lock)"
+alias clearnode="npx rimraf -rf **/(dist|.nuxt|node_modules|*-lock.yaml|*.lock)"
+
+#Fix .DS_Store global NPM
+alias fixnpm="find 'npm list -g | head -1' -name '.DS_Store' -type f -delete"
 
 # Fig post block. Keep at the bottom of this file.
 eval "$(fig init zsh post)"

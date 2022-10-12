@@ -412,6 +412,7 @@ ln -s $(pwd)/bash/bash_alias ~/.bash_alias
 ln -s $(pwd)/bash/bash_profile ~/.bash_profile
 ln -s $(pwd)/bash/bashrc ~/.bashrc
 ln -s $(pwd)/bash/android ~/.android
+ln -s $(pwd)/bash/brew ~/.brew
 ln -s $(pwd)/bash/flutter ~/.flutter
 ln -s $(pwd)/bash/nvm-load ~/.nvm-load
 ln -s $(pwd)/bash/yarn-autocompletions.yml ~/.yarn-autocompletions.yml
