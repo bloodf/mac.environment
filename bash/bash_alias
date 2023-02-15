@@ -57,6 +57,3 @@ alias clearnode="npx rimraf -rf **/(dist|.nuxt|node_modules|*-lock.yaml|*.lock)"
 
 #Fix .DS_Store global NPM
 alias fixnpm="find 'npm list -g | head -1' -name '.DS_Store' -type f -delete"
-
-# Fig post block. Keep at the bottom of this file.
-eval "$(fig init zsh post)"
