@@ -55,3 +55,9 @@ fi
 if [ -f ~/.brew ]; then 
     source ~/.brew;
 fi
+. "$HOME/.cargo/env"
+source "/Users/heitor/.rover/env"
+
+if [ -f ~/.env ]; then
+  source ~/.env
+fi

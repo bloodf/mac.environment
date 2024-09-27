@@ -56,3 +56,5 @@
 [oh-my-zsh]
 	hide-dirty = 1
 	hide-status = 1
+[gpg]
+	program = /opt/homebrew/bin/gpg

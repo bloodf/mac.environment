@@ -1,5 +1,18 @@
-Host *
+Include ~/.orbstack/ssh/config
+
+
+Host Raspberry PI
+	User pi
+	HostName 192.168.50.134
 	IdentityFile ~/.ssh/id_rsa
 	AddKeysToAgent yes
 	UseKeychain yes
 	ServerAliveInterval 60
+	#SCEPassword FBA44C77-0D7D-4042-A7CF-508796ADA8B4
+
+Host *
+	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+Host BTT Pad
+	User biqu
+	HostName 192.168.50.14

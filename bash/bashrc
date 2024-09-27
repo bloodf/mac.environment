@@ -1,2 +1,27 @@
 # FZF
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+. "$HOME/.cargo/env"
+source "/Users/heitor/.rover/env"
+export GPG_TTY=$(tty)
+
+# setting for pyenv
+export PYENV_ROOT="${HOME}/.pyenv"
+if [ -d "${PYENV_ROOT}" ]; then
+    export PATH=${PYENV_ROOT}/bin:${PYENV_ROOT}/shims:${PATH}
+    eval "$(pyenv init -)"
+fi
+# setting for pyenv-virtualenv
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+export PATH="/opt/homebrew/sbin:$PATH"
+
+# bun completions
+[ -s "/Users/heitor/.bun/_bun" ] && source "/Users/heitor/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export LLPPATH="$HOME/Developer/github.com/leaflink/llp-local"
